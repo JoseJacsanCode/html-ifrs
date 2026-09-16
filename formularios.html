@@ -8,17 +8,17 @@
 
 <body>
     <form action="submit.php" method="post" autocomplete="off" novalidate>
-        <p>Escolha sua bebida favorita: </p>
+        <fieldset>
+            <legend>Informações de contato: </legend>
+            <label for="name">Nome: </label>
+            <input type="text" id="name" name="name"><br>
 
-        <input type="radio" id="cevada" name="bebida" value="Cevada">
-        <label for="cevada">Cevada</label>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email"><br>
 
-        <input type="radio" id="cha" name="bebida" value="Chá">
-        <label for="cha">Chá</label>
-
-        <input type="radio" name="agua" id="agua" name="bebida" value="Água" checked>
-        <label for="agua">Água</label>
-
+            <label for="phone">Telefone: </label>
+            <input type="tel" id="phone" name="phone">
+        </fieldset>
         <input type="submit" value="Enviar">
 
     </form> 
